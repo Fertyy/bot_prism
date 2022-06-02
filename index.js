@@ -19,6 +19,16 @@ Client.on("ready", () => {
   console.log("bot opérationnel");
 });
 
+Client.on("guildMemberAdd", member => {
+  console.log("un nouveau membre est arrivé");
+  member.guild.channels.cache.find(channel => channel.id === "981156274601361408").send("Souhaitez la bienvenue à notre nouveau membre <@" + member.id + "> ! Que la force soit avec toi :wink:");
+  member.roles.add("980794916596752454").then(mbr => {
+      console.log("rôle attribué pour " + mbr.displayName);
+  }).catch(() => {
+      console.log("Le rôle na pas pu être attribué");
+  });
+});
+
 
 Client.on("messageCreate", message => {
   if (message.author.bot) return;
