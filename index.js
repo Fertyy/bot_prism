@@ -51,17 +51,4 @@ Client.on("messageCreate", message => {
   }
 });
 
-Client.on("messageCreate", message => {
-  if (message.author.bot) return;
-
-  if (message.content === prefix + "collection"){
-      const embed4 = new Discord.MessageEmbed()
-          .setColor("#0029ff")
-          .setTitle("Tu souhaite la collection :question:")
-          .addField("Saviez-vous qu'il faisait l'objet de mises à jour régulières? Si je te le dis ! L'équipe administrative aime vous étonner tous les jours.:star_struck:\n\nOh oui, pardonnez moi, le lien :star_struck: Voici la célèbre [collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2814388121) ")
-          .setThumbnail("https://cdn2.iconfinder.com/data/icons/gaming-platforms-logo-shapes/250/steam_logo-256.png");
-      message.channel.send({ embeds: [embed4]});
-  }
-});
-
 Client.login(process.env.token);
