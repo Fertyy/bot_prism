@@ -32,7 +32,7 @@ Client.on("messageCreate", message => {
       const embed = new Discord.MessageEmbed()
           .setColor("#0029ff")
           .setTitle(":moneybag: Boutique")
-          .addField("Vous avez demander la boutique ?", "Il vous suffit simplement de cliquer sur ce lien :\n\n:link: https://teamfrench.eu/boutique/index.php\n\nPuis vous pourrez faire votre choix :CasqueDestiny:")
+          .addField("Vous avez demander la boutique ?", "Il vous suffit simplement de cliquer sur ce lien :\n\n:link: https://teamfrench.eu/boutique/index.php\n\nPuis vous pourrez faire votre choix :ringed_planet:")
           .setThumbnail("https://cdn3.iconfinder.com/data/icons/crowdfunding-4/64/x-20-512.png");
       message.channel.send({ embeds: [embed]});
   }
