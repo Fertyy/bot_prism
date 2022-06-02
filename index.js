@@ -59,7 +59,7 @@ Client.on("messageCreate", message => {
           .setColor("#0029ff")
           .setTitle("Tu souhaite la collection :question:")
           .addField("Saviez-vous qu'il faisait l'objet de mises à jour régulières? Si je te le dis ! L'équipe administrative aime vous étonner tous les jours.:star_struck:\n\n Oh oui pardonnez moi, le lien :star_struck: Voici la célèbre [collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2814388121) !")
-          .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png");
+          .setThumbnail("https://cdn.iconscout.com/icon/free/png-256/office-staff-9-1184344.png");
       message.channel.send({ embeds: [embed]});
   }
 });
