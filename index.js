@@ -21,12 +21,7 @@ Client.on("ready", () => {
 
 Client.on("guildMemberAdd", member => {
   console.log("un nouveau membre est arrivé");
-  member.guild.channels.cache.find(channel => channel.id === "981156274601361408").send("Souhaitez la bienvenue à notre nouveau membre <@" + member.id + "> ! Que la force soit avec toi :wink:");
-  member.roles.add("980794916596752454").then(mbr => {
-      console.log("rôle attribué pour " + mbr.displayName);
-  }).catch(() => {
-      console.log("Le rôle na pas pu être attribué");
-  });
+  member.guild.channels.cache.find(channel => channel.id === "980926346148610069").send("Souhaitez la bienvenue à notre nouveau membre <@" + member.id + "> ! Que la force soit avec toi :ringed_planet:");
 });
 
 
@@ -36,7 +31,7 @@ Client.on("messageCreate", message => {
   if (message.content === prefix + "boutique"){
       const embed = new Discord.MessageEmbed()
           .setColor("#0029ff")
-          .setTitle(":moneybag: Boutique 917th")
+          .setTitle(":moneybag: Boutique")
           .addField("Vous avez demander la boutique ?", "Il vous suffit simplement d'écrire '__**donate**__' pour que mon coéquipier <@404365332912930827> puisse vous envoyez le lien !")
           .setThumbnail("https://cdn3.iconfinder.com/data/icons/crowdfunding-4/64/x-20-512.png");
       message.channel.send({ embeds: [embed]});
