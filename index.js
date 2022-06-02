@@ -27,14 +27,6 @@ Client.on("guildMemberAdd", member => {
 Client.on("messageCreate", message => {
   if (message.author.bot) return;
 
-  if (message.content === prefix + "test"){
-      send("test");
-  }
-});
-
-Client.on("messageCreate", message => {
-  if (message.author.bot) return;
-
   if (message.content === prefix + "boutique"){
       const embed = new Discord.MessageEmbed()
           .setColor("#0029ff")
