@@ -24,6 +24,13 @@ Client.on("guildMemberAdd", member => {
   member.guild.channels.cache.find(channel => channel.id === "980926346148610069").send("Souhaitez la bienvenue à notre nouveau membre <@" + member.id + "> ! Que la force soit avec toi :ringed_planet:");
 });
 
+Client.on("messageCreate", message => {
+  if (message.author.bot) return;
+
+  if (message.content === prefix + "test"){
+      send("test");
+  }
+});
 
 Client.on("messageCreate", message => {
   if (message.author.bot) return;
