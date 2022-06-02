@@ -45,7 +45,7 @@ Client.on("messageCreate", message => {
       const embed = new Discord.MessageEmbed()
           .setColor("#0029ff")
           .setTitle("Comment candidater :question:")
-          .addField("L'équipe administrative ou animatrice vous intéresse ?", "Pour tenter votre chance, il suffit de suivre ces instructions :\n\n• Créer sa candidature sur un [Google Doc](https://www.google.com/intl/fr-CA/docs/about/).\n• Faire apparaître votre âge.\n• Faire apparaître vos motivations.\n• Faire apparaître votre expérience.\n• Tout ce que vous pensez qu'il est utile de savoir.\n\nUne fois terminé, posté votre lien dans <#900334715658203216> et attendez une réponse du staff !")
+          .addField("L'équipe administrative ou animatrice vous intéresse ?", "Pour tenter votre chance, il suffit de suivre ces instructions :\n\n• Créer sa candidature sur un [Google Doc](https://www.google.com/intl/fr-CA/docs/about/).\n• Faire apparaître votre âge.\n• Faire apparaître vos motivations.\n• Faire apparaître votre expérience.\n• Tout ce que vous pensez qu'il est utile de savoir.\n\nUne fois terminé, posté votre lien dans <#981981858206208021> et attendez une réponse du staff !")
           .setThumbnail("https://cdn.iconscout.com/icon/free/png-256/office-staff-9-1184344.png");
       message.channel.send({ embeds: [embed]});
   }
