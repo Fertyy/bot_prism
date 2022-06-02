@@ -55,12 +55,12 @@ Client.on("messageCreate", message => {
   if (message.author.bot) return;
 
   if (message.content === prefix + "collection"){
-      const embed = new Discord.MessageEmbed()
+      const embed3 = new Discord.MessageEmbed()
           .setColor("#0029ff")
-          .setTitle("Comment candidater :question:")
-          .addField("L'équipe administrative ou animatrice vous intéresse ?", "Pour tenter votre chance, il suffit de suivre ces instructions :\n\n• Créer sa candidature sur un [Google Doc](https://www.google.com/intl/fr-CA/docs/about/).\n• Faire apparaître votre âge.\n• Faire apparaître vos motivations.\n• Faire apparaître votre expérience.\n• Tout ce que vous pensez qu'il est utile de savoir.\n\nUne fois terminé, posté votre lien dans <#981981858206208021> et attendez une réponse du staff !")
+          .setTitle("Tu souhaite la collection :question:")
+          .addField("Saviez-vous qu'il faisait l'objet de mises à jour régulières ? Si je te le dis ! L'équipe administrative aime vous étonner tous les jours.:star_struck:\n\nOh oui pardonnez moi, le lien :star_struck: Voici la célèbre [collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2814388121) !")
           .setThumbnail("https://cdn.iconscout.com/icon/free/png-256/office-staff-9-1184344.png");
-      message.channel.send({ embeds: [embed]});
+      message.channel.send({ embeds: [embed3]});
   }
 });
 
