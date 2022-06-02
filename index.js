@@ -58,8 +58,7 @@ Client.on("messageCreate", message => {
       const embed2 = new Discord.MessageEmbed()
           .setColor("#0029ff")
           .setTitle("Tu souhaite la collection :question:")
-          .addField("Saviez-vous qu'il faisait l'objet de mises à jour régulières? Si je te le dis ! L'équipe administrative aime vous étonner tous les jours.:star_struck:\n\n Oh oui, pardonnez moi, le lien :star_struck: Voici la célèbre [collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2814388121) ")
-          .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png");
+          .addField("Saviez-vous qu'il faisait l'objet de mises à jour régulières? Si je te le dis ! L'équipe administrative aime vous étonner tous les jours.:star_struck:\n\nOh oui, pardonnez moi, le lien :star_struck: Voici la célèbre [collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2814388121) ");
       message.channel.send({ embeds: [embed2]});
   }
 });
